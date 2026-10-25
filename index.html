@@ -3,7 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>My Todo List</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <main class="container">
+      <h1>My Todo List</h1>
+      <p class="subtitle">Organize your daily tasks</p>
+
+      <form class="task-form" id="taskForm">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="Enter your task..."
+          aria-label="Enter your task"
+        />
+        <button type="submit" class="add-btn">+ Add Task</button>
+      </form>
+
+      <ul class="task-list" id="taskList">
+        <li class="empty-message">No tasks yet. Add your first task!</li>
+      </ul>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
